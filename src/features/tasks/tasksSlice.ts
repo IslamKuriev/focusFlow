@@ -4,7 +4,7 @@ interface Task {
     id: string;
     text: string;
     completed: boolean;
-    finishedAt?: string;
+    finishedAt?: string | number;
 }
 
 interface TasksState {
