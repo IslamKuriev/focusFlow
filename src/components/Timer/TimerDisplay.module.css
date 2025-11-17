@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.circle {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.4s ease;
+}
+
+.inner {
+  width: 190px;
+  height: 190px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: black;
+}
+
+.label {
+  margin-top: 0.5rem;
+  font-size: 1.rem;
+  color: #777;
+}

@@ -1,0 +1,25 @@
+.box {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  margin-bottom: 0.6rem;
+  font-weight: bold;
+}
+
+.value {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 0.4rem 0;
+}
+
+.label {
+  color: #666;
+}

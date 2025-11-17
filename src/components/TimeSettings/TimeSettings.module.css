@@ -1,0 +1,23 @@
+.box {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  margin: 0.8rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  width: 60px;
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}

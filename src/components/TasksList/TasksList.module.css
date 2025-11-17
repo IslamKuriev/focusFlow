@@ -1,0 +1,60 @@
+.box {
+  width: 300px;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.title {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.addRow {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input {
+  flex: 1;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+.btn {
+  width: 34px;
+  height: 34px;
+  border: none;
+  background: #4ade80;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.list {
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.4rem 0;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e84c4c;
+}
