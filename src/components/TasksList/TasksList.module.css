@@ -1,9 +1,11 @@
 .box {
-  width: 300px;
-  margin-top: 2rem;
-  padding: 1rem;
+  margin-top: 0;
+  padding: 1rem 1.5rem;
   border: 1px solid #ddd;
   border-radius: 12px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .title {
@@ -15,10 +17,12 @@
 .addRow {
   display: flex;
   gap: 0.5rem;
+  width: 100%;
 }
 
 .input {
   flex: 1;
+  min-width: 0;
   padding: 6px;
   border-radius: 6px;
   border: 1px solid #aaa;
@@ -40,11 +44,28 @@
   padding: 0;
 }
 
+.empty {
+  opacity: 0.65;
+  font-style: italic;
+  text-align: center;
+  padding: 0.35rem 0;
+}
+
 .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0.4rem 0;
+  gap: 0.6rem;
+}
+
+.item label {
+  min-width: 0;
+  flex: 1;
+}
+
+.item span {
+  overflow-wrap: anywhere;
 }
 
 .done {

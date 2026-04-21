@@ -3,6 +3,7 @@
   padding: 1rem;
   border-radius: 10px;
   backdrop-filter: blur(10px);
+  min-width: 0;
 }
 
 .list {
@@ -20,6 +21,12 @@
   border-radius: 6px;
   display: flex;
   justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.item span {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .clearBtn {

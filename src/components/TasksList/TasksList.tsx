@@ -31,23 +31,27 @@ const TaskList = () => {
       </div>
 
       <ul className={styles.list}>
-        {tasks.map((task) => (
-          <li key={task.id} className={styles.item}>
-            <label>
-              <input
-                type="checkbox"
-                checked={task.completed}
-                onChange={() => dispatch(toggleTask(task.id))}
-              />
-              <span className={task.completed ? styles.done : ""}>
-                {task.text}
-              </span>
-            </label>
-            <button className={styles.delete} onClick={() => dispatch(deleteTask(task.id))}>
-              ✕
-            </button>
-          </li>
-        ))}
+        {tasks.length === 0 ? (
+          <li className={styles.empty}>Пока пусто...</li>
+        ) : (
+          tasks.map((task) => (
+            <li key={task.id} className={styles.item}>
+              <label>
+                <input
+                  type="checkbox"
+                  checked={task.completed}
+                  onChange={() => dispatch(toggleTask(task.id))}
+                />
+                <span className={task.completed ? styles.done : ""}>
+                  {task.text}
+                </span>
+              </label>
+              <button className={styles.delete} onClick={() => dispatch(deleteTask(task.id))}>
+                ✕
+              </button>
+            </li>
+          ))
+        )}
       </ul>
     </div>
   );

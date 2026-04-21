@@ -1,11 +1,16 @@
 .box {
-  margin-top: 2rem;
+  margin-top: 0;
   padding: 1rem 1.5rem;
   border-radius: 12px;
   border: 1px solid #ccc;
-  width: 340px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.title {
+  margin: 0 0 0.75rem;
+  text-align: center;
 }
 
 .row {
@@ -15,7 +20,7 @@
   align-items: center;
 }
 
-input {
+.box input {
   width: 60px;
   padding: 4px;
   border-radius: 6px;

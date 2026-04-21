@@ -1,12 +1,9 @@
 .box {
-  margin-top: 2rem;
+  margin-top: 0;
   padding: 1rem 1.5rem;
   border-radius: 12px;
   border: 1px solid #ddd;
   text-align: center;
-  width: 260px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .title {
